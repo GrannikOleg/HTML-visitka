@@ -1,0 +1,421 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HTML Visitka Model</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+body
+{
+background-color:DimGray; /* Цвет фона веб-страницы */
+}
+.title
+{
+position:absolute;
+color:Azure; /* Цвет символа */
+font-size:360%; /* Размер шрифта */
+top:2%;
+left:26%;
+}
+#select
+{
+position:absolute;
+top:15%;
+right:8%;
+width:56%;
+height:4%;
+color:Cornsilk;
+background:Sienna;
+border:1px solid #ccc;
+font-size:120%;
+text-align:center;
+cursor:pointer;
+}
+option
+{
+text-align:center;
+}
+.lb
+{
+position:absolute;
+left:1%;
+top:15%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.lc
+{
+position:absolute;
+left:1%;
+top:30%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.ld
+{
+position:absolute;
+left:1%;
+top:45%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.le
+{
+position:absolute;
+left:1%;
+top:60%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+/* a b c d e f i j k l m n o p q r s t u v w x y z */
+.ba
+{
+position:absolute;
+left:1%;
+top:75%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bb
+{
+position:absolute;
+left:8%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bc
+{
+position:absolute;
+left:15%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bd
+{
+position:absolute;
+left:22%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.be
+{
+position:absolute;
+left:29%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bf
+{
+position:absolute;
+left:36%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bj
+{
+position:absolute;
+left:43%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bk
+{
+position:absolute;
+left:50%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bl
+{
+position:absolute;
+left:57%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bm
+{
+position:absolute;
+left:64%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bn
+{
+position:absolute;
+left:71%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bo
+{
+position:absolute;
+left:78%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bp
+{
+position:absolute;
+left:85%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.bq
+{
+position:absolute;
+left:92%;
+bottom:10%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+/* a b c d e f i j k l m n o p q r s t u v w x y z */
+.rb
+{
+position:absolute;
+right:1%;
+top:15%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.rc
+{
+position:absolute;
+right:1%;
+top:30%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.rd
+{
+position:absolute;
+right:1%;
+top:45%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+.re
+{
+position:absolute;
+right:1%;
+top:60%;
+width:7%;
+height:15%;
+border-radius:14px;
+background-color:Gray;
+}
+/* portrait * портрет */
+.portrait
+{
+position:absolute;
+left:8%;
+top:15%;
+width:383px;
+height:400px;
+background-color:DarkGray;
+}
+/* picture */
+.picture
+{
+position:absolute;
+right:8%;
+top:15%;
+width:766px;
+height:374px;
+background-color:Silver;
+}
+.button
+{
+position:absolute;
+bottom:25%;
+right:8%;
+width:56%;
+height:4%;
+background:Gray;
+border:1px solid #ccc;
+text-align:center;
+cursor:pointer;
+}
+</style>
+<script type="text/javascript">
+// --------------------------------------------------------- Обо мне украинский текст ---------------------------------------------------//
+var visible = true;
+function aboutme()
+{
+// переключалка
+if(visible)
+{
+document.getElementById('about' ).style.display = 'none';
+visible = false;
+}
+else
+{
+document.getElementById("about").style.display="block";
+visible = true;
+}
+// title
+document.title="КРАТКО ОБО МНЕ ru";
+// Параметры блока about
+document.getElementById("about").style.position="absolute";
+document.getElementById("about").style.top="0pt";
+document.getElementById("about").style.left="0pt";
+document.getElementById("about").style.height="71%";
+document.getElementById("about").style.width="100%";
+document.getElementById("about").style.overflow="scroll";
+document.getElementById("about").style.border="1px solid Black";
+document.getElementById('about').style.color="Black";
+document.getElementById('about').style.fontSize='120%';
+document.getElementById('about').style.textIndent="30px"; //* Отступ первой строки *//
+document.getElementById('about').style.paddingLeft="3%";
+document.getElementById('about').style.paddingRight="3%";
+document.getElementById('about').style.backgroundColor="White";
+//
+document.getElementById("about").innerHTML = "\
+<br>\
+<br>\
+<center style='padding-bottom:10px; font-weight: 600; padding-top:1px; font-variant:normal; font-size:19px;'>Обо мне</center></p>\
+\
+\
+\
+<br>\
+<br>"
+}
+// --------------------------------------------------------- часы ---------------------------------------------------//
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = "Сегодня: " + day + " " + month[month_num] + " " + d.getFullYear() +
+" г.&nbsp;&nbsp;&nbsp;Текущее время: "+ hours + ":" + minutes + ":" + seconds + " | GRANNIK | online INTERNET | Zhdanov Oleg | Created in Linux OS | HTML | CSS | JavaScript | 🄯";
+if (document.layers) {
+ document.layers.docTime.document.write(date_time);
+ document.layers.docTime.document.close();
+}
+else document.getElementById("docTime").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+document.getElementById('docTime').style.fontSize = '100%';
+document.getElementById('docTime').style.position = "absolute";
+document.getElementById('docTime').style.bottom = "4%";
+document.getElementById('docTime').style.left = "0%";
+document.getElementById('docTime').style.width = "100%";
+document.getElementById('docTime').style.textAlign = "center";
+document.getElementById('docTime').style.color = '#fff';
+}
+</script>
+</head>
+<body onload="clock();">
+<div class="title">HTML Visitka Model</div>
+<div class="portrait"></div>
+<div class="picture"></div>
+<span id="docTime"></span>
+<!---->
+<div class="lb"></div>
+<div class="lc"></div>
+<div class="ld"></div>
+<div class="le"></div>
+<!---->
+<div class="ba"></div>
+<div class="bb"></div>
+<div class="bc"></div>
+<div class="bd"></div>
+<div class="be"></div>
+<div class="bf"></div>
+<div class="bj"></div>
+<div class="bk"></div>
+<div class="bl"></div>
+<div class="bm"></div>
+<div class="bn"></div>
+<div class="bo"></div>
+<div class="bp"></div>
+<div class="bq"></div>
+<!---->
+<div class="rb"></div>
+<div class="rc"></div>
+<div class="rd"></div>
+<div class="re"></div>
+<!---->
+<select id="select" onchange="window.location.href=this.options[this.selectedIndex].value">
+<optgroup label="#">
+    <option VALUE="#">ПОЛЕЗНЫЕ ССЫЛКИ</option>
+    <option VALUE="https://onetimesecret.com//">onetimesecret</option>
+    <option VALUE="#" >##</option>
+    <option VALUE="#">###</option>
+</optgroup>
+<optgroup label="&">
+    <option VALUE="#">&</option>
+    <option VALUE="#">&&</option>
+    <option VALUE="#">&&&</option>
+    <option VALUE="#">ПОЛЕЗНЫЕ ССЫЛКИ</option>
+</optgroup>
+</select>
+<!-- -->
+<button class="button" onclick="aboutme()">КРАТКО ОБО МНЕ</button>
+<Div Id="about"></Div>
+</body>
+</html>
